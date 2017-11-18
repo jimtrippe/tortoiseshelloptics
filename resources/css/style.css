@@ -14,13 +14,15 @@ div {
 
 .container,
 .container1,
-.container2 {
+.container2,
+.container3 {
   display: flex;
   width: 960px;
   margin: 0 auto;
 }
 
-.container {
+.container,
+.container3 {
   align-items: center;
 }
 
@@ -28,7 +30,7 @@ div {
   justify-content: flex-end;
 }
 
-.container2 {
+.container2{
   justify-content: center;
 }
 
@@ -120,7 +122,7 @@ nav span {
   margin-right: 5%;
 }
 
-.delivery span {
+.delivery .title {
   width: 10rem;
   font-weight: bold;
   font-size: 1rem;
@@ -142,4 +144,92 @@ footer .container {
 footer img {
   height: 1.5rem;
   margin: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+/* Less than 1024 pixel screen */
+  header {
+    height: 22rem;
+    width: 100%;
+  }
+  nav {
+    margin-top: 0;
+  }
+  .message {
+    font-size: 1.55rem;
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+  .container,
+  .container1,
+  .container2,
+  .container3 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+/* Less than 480 pixel screen */
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  header nav span,
+  .demenu {
+    display: none;
+  }
+  .momenu {
+    display: flex;
+  }
+  .message {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0;
+  }
+  .container2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+  .container3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item1,
+  .item2,
+  .item3 {
+    font-size: 0.77rem;
+    margin: 0;
+  }
+  .item2,
+  .item3 {
+    margin-top: 1.54rem;
+  }
+  .delivery {
+    width: 100%;
+  }
+  .delivery p {
+    font-size: 0.77rem;
+    width: 100%;
+    margin: 1rem 1rem 4rem 1rem;
+  }
+  .delivery .title {
+    width: 100%;
+    text-align: center;
+  }
+  footer span {
+    display: none;
+  }
+  footer img {
+    align-items: center;
+    padding: 0;
+  }
 }
