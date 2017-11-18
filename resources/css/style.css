@@ -1,3 +1,145 @@
-* {
+html,
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: white;
+}
 
+/* Boxes to help with design */
+section,
+div {
+  border: 1px solid blue;
+}
+
+.container,
+.container1,
+.container2 {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.container {
+  align-items: center;
+}
+
+.container1 {
+  justify-content: flex-end;
+}
+
+.container2 {
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-image: url('https://jimtrippe.github.io/tortoiseshelloptics/resources/images/glasses-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+}
+
+nav {
+  color: white;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  width:inherit;
+}
+
+nav div,
+nav .menu {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  align-items: center;
+}
+
+nav span {
+  padding-left: 1rem;
+  align-content: flex-end;
+}
+
+.demenu li {
+  display: inline;
+  padding-left: 2rem;
+}
+
+.momenu {
+  display: none;
+}
+
+.message {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  text-align: right;
+}
+
+.item1,
+.item2,
+.item3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.item1 img {
+  width: 3.5rem;
+}
+
+.item2 img,
+.item3 img {
+  width: 5rem;
+}
+
+.delivery {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.delivery span {
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  text-align: left;
+  padding: 0.5rem 1.25rem;
+  color: white;
+}
+
+.delivery p {
+  margin-top: 1rem;
+}
+
+footer .container {
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
 }
