@@ -209,9 +209,13 @@ footer img {
     font-size: 0.77rem;
     margin: 0;
   }
+  .item1 {
+  height: 6rem;
+  }
   .item2,
   .item3 {
     margin-top: 1.54rem;
+    height: 5rem;
   }
   .delivery {
     width: 100%;
@@ -230,6 +234,6 @@ footer img {
   }
   footer img {
     align-items: center;
-    padding: 0;
+    margin: 4rem 0;
   }
 }
